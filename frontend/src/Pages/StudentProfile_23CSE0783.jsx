@@ -1,5 +1,3 @@
-import "./StudentProfile_23CSE0783.css";
-
 function StudentProfile_23CSE0783() {
   const student = {
     fullName: "Sample Student",
@@ -12,43 +10,45 @@ function StudentProfile_23CSE0783() {
   };
 
   return (
-    <div className="profile-container">
-      <div className="profile-card">
-        <h1>Student Profile</h1>
+    <div className="flex flex-1 items-center justify-center bg-slate-100 p-5 font-[Arial,sans-serif]">
+      <div className="w-full max-w-[600px] rounded-xl bg-white p-6 shadow-[0_4px_15px_rgba(0,0,0,0.1)] sm:p-[30px]">
+        <h1 className="mb-[25px] text-center text-2xl font-bold text-blue-900">
+          Student Profile
+        </h1>
 
-        <div className="profile-details">
-          <p>
-            <strong>Full Name:</strong>
+        <div>
+          <p className="border-b border-slate-200 p-3 text-slate-700">
+            <strong className="inline-block w-[145px] text-blue-800">Full Name:</strong>{" "}
             {student.fullName}
           </p>
 
-          <p>
-            <strong>Address:</strong>
+          <p className="border-b border-slate-200 p-3 text-slate-700">
+            <strong className="inline-block w-[145px] text-blue-800">Address:</strong>{" "}
             {student.address}
           </p>
 
-          <p>
-            <strong>Faculty:</strong>
+          <p className="border-b border-slate-200 p-3 text-slate-700">
+            <strong className="inline-block w-[145px] text-blue-800">Faculty:</strong>{" "}
             {student.faculty}
           </p>
 
-          <p>
-            <strong>Department:</strong>
+          <p className="border-b border-slate-200 p-3 text-slate-700">
+            <strong className="inline-block w-[145px] text-blue-800">Department:</strong>{" "}
             {student.department}
           </p>
 
-          <p>
-            <strong>Index Number:</strong>
+          <p className="border-b border-slate-200 p-3 text-slate-700">
+            <strong className="inline-block w-[145px] text-blue-800">Index Number:</strong>{" "}
             {student.indexNumber}
           </p>
 
-          <p>
-            <strong>University:</strong>
+          <p className="border-b border-slate-200 p-3 text-slate-700">
+            <strong className="inline-block w-[145px] text-blue-800">University:</strong>{" "}
             {student.university}
           </p>
 
-          <p>
-            <strong>Date of Birth:</strong>
+          <p className="border-b border-slate-200 p-3 text-slate-700">
+            <strong className="inline-block w-[145px] text-blue-800">Date of Birth:</strong>{" "}
             {student.dateOfBirth}
           </p>
         </div>
