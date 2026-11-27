@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-import Registration from "./pages/registration.jsx";
-import StudentProfile_23CSE0783 from "./pages/StudentProfile_23CSE0783.jsx";
+//import Registration from "./Pages/registration.jsx";
+import StudentProfile_23CSE0783 from "./Pages/StudentProfile_23CSE0783.jsx";
 // import StudentProfile2 from "./pages/StudentProfile_2";
 // import StudentProfile3 from "./pages/StudentProfile_3";
 // import StudentProfile4 from "./pages/StudentProfile_4";
@@ -14,7 +14,7 @@ function App() {
   const renderPage = () => {
     switch (currentPage) {
       case "profile1":
-        return <StudentProfile_23CSE0783 />;
+        return <StudentProfile_23CSE0783/>;
 
       // case "profile2":
       //   return <StudentProfile2 />;
@@ -26,7 +26,7 @@ function App() {
       //   return <StudentProfile4 />;
 
       default:
-        return <Registration />;
+        return <StudentProfile_23CSE0783/>;
     }
   };
 
