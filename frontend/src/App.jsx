@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Registration from "./Pages/Registration.jsx";
 import StudentProfile_23CSE0783 from "./Pages/StudentProfile_23CSE0783.jsx";
 
 function App() {
@@ -35,20 +36,18 @@ function App() {
       </nav>
 
       <main className="flex flex-1 flex-col">
-        {currentPage === "profile1" ? (
+        {currentPage === "registration" ? (
+          <Registration />
+        ) : currentPage === "profile1" ? (
           <StudentProfile_23CSE0783 />
         ) : (
           <section className="m-auto w-full max-w-xl px-5 py-12 text-center">
             <div className="rounded-xl bg-white p-8 shadow-md">
               <h1 className="text-2xl font-bold text-blue-900">
-                {currentPage === "registration"
-                  ? "Registration"
-                  : `Student ${currentPage.slice(-1)} profile`}
+                Student {currentPage.slice(-1)} profile
               </h1>
               <p className="mt-3 text-slate-600">
-                {currentPage === "registration"
-                  ? "The registration page is not available yet."
-                  : "This student profile has not been added yet."}
+                This student profile has not been added yet.
               </p>
             </div>
           </section>
